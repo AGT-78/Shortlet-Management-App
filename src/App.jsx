@@ -13,6 +13,7 @@ import Unauthorized from "./components/auth/Unauthorized";
 import Navbar from './components/admin/Navbar';
 import AboutUs from "./pages/AboutUs";
 import ApartmentDetails from './pages/ApartmentDetails';
+import Footer from './components/admin/Footer'
 
 
 function App() {
@@ -36,6 +37,7 @@ function App() {
 
         <Route path='/unauthorized' element={<Unauthorized />} />
       </Routes>
+        <Footer/>
     </div>
   );
 }

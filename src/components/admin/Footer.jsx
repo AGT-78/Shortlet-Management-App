@@ -1,30 +1,58 @@
 import { assets } from '../../assets/assets'
+import { FaFacebookF, FaTwitter, FaInstagram, FaYoutube } from "react-icons/fa";
+import { MdEmail, MdPhone, MdLocationOn } from "react-icons/md";
+import '../styles/Footer.css'
 
 
 
 const Footer = () => {
   return (
-    <footer className="flex md:flex-row flex-col-reverse items-center justify-between text-left w-full px-8 border-t">
-      <div className="flex items-center gap-4">
-        <img className="hidden md:block w-20" src={assets.logo} alt="logo" />
-        <div className="hidden md:block h-7 w-px bg-gray-500"></div>
-        <p className="py-4 text-center text-xs md:text-sm text-gray-500">
-          Copyright 2025 © Group 8. All Right Reserved.
-        </p>
+    <footer className="footer-container">
+      <div className="footer-top">
+        <p>Stay connected with us on social media!</p>
+        <div className="social-icons">
+          <FaFacebookF />
+          <FaTwitter />
+          <FaInstagram />
+          <FaYoutube />
+        </div>
       </div>
 
-      <div className="flex items-center gap-3 max-md:mt-4">
-        <a href="#">
-          <img src={assets.facebook_icon} alt="facebook_icon" />
-        </a>
-        <a href="#">
-          <img src={assets.twitter_icon} alt="twitter_icon" />
-        </a>
-        <a href="#">
-          <img src={assets.instagram_icon} alt="instagram_icon" />
-        </a>
+      <div className="footer-content">
+        <div className="footer-section about">
+          <h3>Land-BNB</h3>
+          <p>
+            Your best finds of Apartments for Your Vacation
+          </p>
+        </div>
+
+        <div className="footer-section links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li>About Us</li>
+            <li>My Bookins</li>
+            <li>Top Rated Apartments</li>
+          </ul>
+        </div>
+
+        <div className="footer-section contact">
+          <h3>Contact</h3>
+          <p>
+            <MdLocationOn /> 123 Twelveth Street, Gotham City
+          </p>
+          <p>
+            <MdEmail /> support@gamehub.com
+          </p>
+          <p>
+            <MdPhone /> +123 456 7890
+          </p>
+        </div>
       </div>
-   </footer>
+
+      <div className="footer-bottom">
+        <p>&copy; {new Date().getFullYear()} GameHub. All rights reserved.</p>
+      </div>
+    </footer>
   );
 };
 
