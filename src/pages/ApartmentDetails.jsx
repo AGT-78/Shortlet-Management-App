@@ -9,18 +9,18 @@ const ApartmentDetails = () => {
     const navigate = useNavigate();
 
     const apartments = [
-        { id: 1, name: "Luxury Lakefront Villa", location: "Barrie, Canada", price: 420, rating: 4.87, category: "3 Bedroom", image: "/aImages/a1.jpg" },
-        { id: 2, name: "Skyline Penthouse", location: "New York, US", price: 911, rating: 4.98, category: "2 Bedroom", image: "/aImages/a2.jpg" },
-        { id: 3, name: "Cozy Beachfront Cottage", location: "Kawartha Lakes, Canada", price: 632, rating: 4.96, category: "Small Apartment", image: "/aImages/a3.jpg" },
-        { id: 4, name: "Modern Treehouse", location: "Curve Lake, Canada", price: 770, rating: 4.82, category: "Domes", image: "/aImages/a4.jpg" },
-        { id: 5, name: "Mountain Escape Cabin", location: "Banff, Canada", price: 550, rating: 4.91, category: "Medium Apartment", image: "/aImages/a5.jpg" },
-        { id: 6, name: "Urban Loft", location: "Los Angeles, US", price: 689, rating: 4.88, category: "2 Bedroom", image: "/aImages/a6.jpg" },
-        { id: 7, name: "Seaside Getaway", location: "Miami, US", price: 720, rating: 4.89, category: "Small Apartment", image: "/aImages/a7.jpg" },
-        { id: 8, name: "Rustic Lakeside Cabin", location: "Muskoka, Canada", price: 499, rating: 4.84, category: "3 Bedroom", image: "/aImages/a8.jpg" },
-        { id: 9, name: "Sky High Luxury Suite", location: "Dubai, UAE", price: 1250, rating: 5.00, category: "Penthouse", image: "/aImages/a9.jpg" },
-        { id: 10, name: "Santorini Cliffside Villa", location: "Santorini, Greece", price: 1150, rating: 4.95, category: "Luxury", image: "/aImages/a10.jpg" },
-        { id: 11, name: "Tokyo High-Rise Studio", location: "Tokyo, Japan", price: 850, rating: 4.92, category: "Studio", image: "/aImages/a11.jpg" },
-        { id: 12, name: "Parisian Charm Apartment", location: "Paris, France", price: 990, rating: 4.97, category: "2 Bedroom", image: "/aImages/a12.jpg" }
+        { id: 1, name: "Luxury Lakefront Villa", location: "Barrie, Canada", price: 420, rating: 4.87, category: "3 Bedroom", image: "/Shortlet-Management-App/aImages/a1.jpg" },
+        { id: 2, name: "Skyline Penthouse", location: "New York, US", price: 911, rating: 4.98, category: "2 Bedroom", image: "/Shortlet-Management-App/aImages/a2.jpg" },
+        { id: 3, name: "Cozy Beachfront Cottage", location: "Kawartha Lakes, Canada", price: 632, rating: 4.96, category: "Small Apartment", image: "/Shortlet-Management-App/aImages/a3.jpg" },
+        { id: 4, name: "Modern Treehouse", location: "Curve Lake, Canada", price: 770, rating: 4.82, category: "Domes", image: "/Shortlet-Management-App/aImages/a4.jpg" },
+        { id: 5, name: "Mountain Escape Cabin", location: "Banff, Canada", price: 550, rating: 4.91, category: "Medium Apartment", image: "/Shortlet-Management-App/aImages/a5.jpg" },
+        { id: 6, name: "Urban Loft", location: "Los Angeles, US", price: 689, rating: 4.88, category: "2 Bedroom", image: "/Shortlet-Management-App/aImages/a6.jpg" },
+        { id: 7, name: "Seaside Getaway", location: "Miami, US", price: 720, rating: 4.89, category: "Small Apartment", image: "/Shortlet-Management-App/aImages/a7.jpg" },
+        { id: 8, name: "Rustic Lakeside Cabin", location: "Muskoka, Canada", price: 499, rating: 4.84, category: "3 Bedroom", image: "/Shortlet-Management-App/aImages/a8.jpg" },
+        { id: 9, name: "Sky High Luxury Suite", location: "Dubai, UAE", price: 1250, rating: 5.00, category: "Penthouse", image: "/Shortlet-Management-App/aImages/a9.jpg" },
+        { id: 10, name: "Santorini Cliffside Villa", location: "Santorini, Greece", price: 1150, rating: 4.95, category: "Luxury", image: "/Shortlet-Management-App/aImages/a10.jpg" },
+        { id: 11, name: "Tokyo High-Rise Studio", location: "Tokyo, Japan", price: 850, rating: 4.92, category: "Studio", image: "/Shortlet-Management-App/aImages/a11.jpg" },
+        { id: 12, name: "Parisian Charm Apartment", location: "Paris, France", price: 990, rating: 4.97, category: "2 Bedroom", image: "/Shortlet-Management-App/aImages/a12.jpg" }
     ];
 
 
