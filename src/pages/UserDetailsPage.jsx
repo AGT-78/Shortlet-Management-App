@@ -22,7 +22,7 @@ const UserDetailsPage = () => {
     <div className="user-details-container">
       <h2>User Profile</h2>
       <div className="user-card">
-        <img src="/Shortlet-Management-App/Images/apartments/User.jpg" alt="User Avatar" className="user-avatar" />
+        <img src="/Shortlet-Management-App/Images/User/User.jpg" alt="User Avatar" className="user-avatar" />
         <p>
           <strong>Name:</strong>
           {isEditing ? (
