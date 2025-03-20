@@ -11,6 +11,7 @@ const Home = () => {
   const [selectedCategory, setSelectedCategory] = useState(""); // State to track selected category
 
   const categories = ["3 Bedroom", "2 Bedroom", "Small Apartment", "Domes", "Medium Apartment"];
+
   const handleCategoryClick = (category) => {
     setSelectedCategory(category); // Update selected category
     console.log(`Filtering for: ${category}`);

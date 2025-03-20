@@ -4,35 +4,37 @@ import { AppContext } from "../../context/AppContext";
 import { useContext } from 'react';
 
 const Navbar = () => {
-    const { navigate } = useContext(AppContext);
+  const { navigate } = useContext(AppContext);
 
-    return (
-      <nav className="navbar-container">
-        {/* Logo */}
-        <img onClick={() => navigate('/')} src={assets.logo} alt="Logo" className='logo' />
-        
-        {/* Desktop Navigation */}
-        <div className="nav-links">
-            <button className='nav-button' onClick={() => navigate('/admin')}>Admin Board</button>
-            <Link to='/' className='nav-link'>Home</Link>
-            <Link to='/about' className='nav-link'>About Us</Link>
-        </div>
-        
-        {/* User Menu */}
-        <div className="user-menu">
-            <button className='user-button' onClick={() => navigate('/login')}>Login</button>
-            <button className='user-button' onClick={() => navigate('/signup')}>Sign Up</button>
-        </div>
+  return (
+    <nav className="navbar-container">
+      {/* Logo */}
+      <img onClick={() => navigate('/')} src={assets.logo} alt="Logo" className='logo' />
+      
+      {/* Desktop Navigation */}
+      <div className="nav-links">
+          <button className='nav-button' onClick={() => navigate('/admin')}>Admin Board</button>
+          <Link to='/' className='nav-link'>Home</Link>
+          <Link to='/about' className='nav-link'>About Us</Link>
+          <Link to='/support'className='nav-link'>Contact Support</Link>
+      </div>
+      
+      {/* User Menu */}
+      <div className="user-menu">
+          <button className='user-button' onClick={() => navigate('/login')}>Login</button>
+          <button className='user-button' onClick={() => navigate('/signup')}>Sign Up</button>
+      </div>
 
-        {/* Mobile Navigation */}
-        <div className="mobile-nav">
-            <button className='nav-button' onClick={() => navigate('/')}>Home</button>
-            <Link to='/admin' className='nav-link'>Admin Board</Link>
-            <Link to='/about' className='nav-link'>About Us</Link>
+      {/* Mobile Navigation */}
+      <div className="mobile-nav">
+          <button className='nav-button' onClick={() => navigate('/')}>Home</button>
+          <Link to='/admin' className='nav-link'>Admin Board</Link>
+          <Link to='/about' className='nav-link'>About Us</Link>
+          <Link to='/support'className='nav-link'>Contact Support</Link>
 
-        </div>
-      </nav>
-    );
+      </div>
+    </nav>
+  );
 };
 
 export default Navbar;

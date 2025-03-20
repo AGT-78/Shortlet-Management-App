@@ -2,7 +2,7 @@ import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import Home from "./pages/Home";
 import UserBookingDetails from './pages/UserBookingDetails';
-import UserDetailsPage from './pages/UserDetailsPage';  // Make sure this import is correct
+import UserDetailsPage from './pages/UserDetailsPage'; 
 import Admin from './pages/admin/Admin';
 import Dashboard from './pages/admin/Dashboard';
 import ViewBookings from "./pages/admin/ViewBookings";
@@ -13,6 +13,7 @@ import Unauthorized from "./components/auth/Unauthorized";
 import Navbar from './components/admin/Navbar';
 import AboutUs from "./pages/AboutUs";
 import ApartmentDetails from './pages/ApartmentDetails';
+import Support from './pages/Support';
 import Footer from './components/admin/Footer'
 
 
@@ -24,7 +25,7 @@ function App() {
         <Route path='/' element={<Home />} />
         <Route path="/about" element={<AboutUs />} />
         <Route path='/user-bookings' element={<UserBookingDetails />} />
-        <Route path='/user-details' element={<UserDetailsPage />} />  {/* Make sure this is here */}
+        <Route path='/user-details' element={<UserDetailsPage />} /> 
         
         <Route path='/admin' element={<Admin />}>
           <Route index element={<Dashboard />} />
@@ -34,6 +35,7 @@ function App() {
           <Route path='view-apartments' element={<ViewApartments />} />
         </Route>
         <Route path='/guest/:id' element={<ApartmentDetails />}></Route>
+         <Route path='/support' element={<Support />} />
 
         <Route path='/unauthorized' element={<Unauthorized />} />
       </Routes>
