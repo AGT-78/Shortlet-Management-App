@@ -12,6 +12,7 @@ import ViewApartments from './pages/admin/ViewApartments';
 import Unauthorized from "./components/auth/Unauthorized";
 import Navbar from './components/admin/Navbar';
 import AboutUs from "./pages/AboutUs";
+import ApartmentDetails from './pages/ApartmentDetails';
 
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
           <Route path='view-guests' element={<ViewGuest />} />
           <Route path='view-apartments' element={<ViewApartments />} />
         </Route>
+        <Route path='/guest/:id' element={<ApartmentDetails />}></Route>
 
         <Route path='/unauthorized' element={<Unauthorized />} />
       </Routes>
